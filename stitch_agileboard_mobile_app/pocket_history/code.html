@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary": "#735c00", "surface-container-highest": "#dae2fd", "secondary-container": "#80f9c8", "outline-variant": "#bbcabf", "on-error-container": "#93000a", "primary-fixed": "#6ffbbe", "on-tertiary-container": "#473700", "outline": "#6c7a71", "inverse-primary": "#4edea3", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-secondary-fixed": "#002115", "inverse-surface": "#283044", "surface-bright": "#faf8ff", "surface-dim": "#d2d9f4", "error-container": "#ffdad6", "secondary": "#006c4e", "tertiary-fixed-dim": "#eac33e", "on-surface-variant": "#3c4a42", "primary": "#006c49", "surface-container-high": "#e2e7ff", "secondary-fixed": "#80f9c8", "surface-tint": "#006c49", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "on-secondary-fixed-variant": "#00513a", "surface-variant": "#dae2fd", "surface-container-low": "#f2f3ff", "surface": "#faf8ff", "background": "#faf8ff", "on-secondary-container": "#007353", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#574500", "surface-container": "#eaedff", "on-background": "#131b2e", "tertiary-container": "#c39f17", "primary-container": "#10b981", "primary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#62dcad", "tertiary-fixed": "#ffe086", "on-primary-fixed-variant": "#005236", "on-error": "#ffffff", "on-tertiary": "#ffffff", "on-primary-fixed": "#002113", "on-tertiary-fixed": "#231b00", "on-primary-container": "#00422b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2rem", "gutter": "1rem", "margin": "1rem" }, fontFamily: { "label-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "display-lg-mobile": ["Inter"], "body-sm": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Pocket App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W3agjCMLlBlGzBq_Hl3kbgYBuM_97UkX6lnFpvMy7Qnxbm3D_VoBLuKEuChMwhmkDbCCEtBifcptOxXeEUhpxRqZKj1Q5jvW0TKE-J5GPfU0Nat2IBZBVdnjre2Tg55b4KcMKsHBYs5Tk3ZBAvuUUExdmrgcPc51k2C1TS0NFiz9X_wvGHkJlqTujjG5mehAk9kLxNN9j-8OH0TtIPnLpD7gdVfUMY3pThyDIQEVNtjHcfKZz0f59JXR8c"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Pocket</span><span class="font-label-md text-label-md text-on-surface-variant ml-space-xs"><span class="opacity-40 mr-space-xs font-normal">/</span>History</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container/60 transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlicgzebLQ4_Eo0g8Q2iHQrFe3XMLFY94jZucMTijuPiScZEokOz6WiJV8emXmuMNYK7vCMXcc5xRH77_aoC5EMGkZURx6ikgQlXvIzx4-8ow3HgBqoAikrUrFQ0YWZd8eX_KXId23WBlSK11gplVt9eowO9mD3906WDroeoIjWwvWzhb3XGiuJMFSbIzo8RCKTojXwL2fF21MPiN-YYgwSLfY4CacyuwhuZxYz1bgmoaTppMC8x8K5Q"/></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-6">
+<!-- Top Control Center -->
+<section class="flex flex-col gap-space-md pt-space-xs mb-space-md">
+<!-- Month Selector & Spending Summary Capsule -->
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center justify-between">
+<button aria-label="Select Month" class="flex items-center gap-space-xs text-on-surface hover:text-primary transition-colors focus:outline-none" id="monthDropdownBtn" type="button">
+<span class="font-headline-sm text-headline-sm tracking-tight">October 2024</span>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant transition-transform duration-200" id="monthArrow">expand_more</span>
+</button>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+          48 items
+        </span>
+</div>
+<!-- Total Spending Tracker Cardlet -->
+<div class="flex items-center justify-between pt-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Monthly Net Outflow</span>
+<span class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight font-bold">₩580,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Avg</span>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">₩24,160</span>
+</div>
+</div>
+</div>
+<!-- Search & Quick Action Input -->
+<div class="relative w-full">
+<div class="flex items-center w-full h-12 bg-surface-container-lowest rounded-full px-space-md shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-outline mr-space-sm">search</span>
+<input class="flex-1 bg-transparent text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none" id="txSearchInput" placeholder="Search memo, store, or tag..." type="text"/>
+<button aria-label="Clear search" class="hidden text-outline hover:text-on-surface transition-colors p-1" id="clearSearchBtn" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+<button aria-label="Toggle advanced filters" class="w-8 h-8 ml-space-xs flex items-center justify-center rounded-full bg-surface-container text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar -mx-margin px-margin py-0.5">
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-primary-container text-on-primary-container shadow-sm font-semibold" data-category="all">
+        All (48)
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="food">
+        Food 🍜
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="cafe">
+        Cafe ☕
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="transport">
+        Transport 🚇
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="shopping">
+        Shopping 🛍️
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="bills">
+        Rent/Bills 🏠
+      </button>
+<button class="filter-chip whitespace-nowrap px-space-md py-2 rounded-full font-label-md text-label-md transition-all duration-200 bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm" data-category="income">
+        Income 💰
+      </button>
+</div>
+</section>
+<!-- Transaction Groups Container -->
+<div class="flex flex-col gap-space-lg" id="transactionList">
+<!-- GROUP 1: Today, Oct 24 -->
+<section class="flex flex-col gap-space-sm tx-group" data-date="2024-10-24">
+<!-- Date Bar Header -->
+<div class="sticky top-16 z-20 flex items-center justify-between py-1 bg-surface/90 backdrop-blur-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Today, Oct 24</h2>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant font-semibold">
+          -₩18,500
+        </span>
+</div>
+<!-- Item Card Stack -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: Emart Everyday -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="food" data-memo="emart everyday tofu eggs milk meal prep toss check card">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary">local_grocery_store</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Emart Everyday</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Tofu, eggs, milk</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded-md bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-medium">Meal Prep</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">1:45 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Toss Card</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩14,200</span>
+</div>
+</article>
+<!-- Item 2: Subway Line 2 -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="transport" data-memo="subway line 2 commute morning">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">subway</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Subway Line 2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Commute</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">8:50 AM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">Transit Card</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩1,400</span>
+</div>
+</article>
+<!-- Item 3: Mega Coffee -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="cafe" data-memo="mega coffee iced americano solo saver">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">local_cafe</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Mega Coffee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Iced americano</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium">Solo Saver</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">8:15 AM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩2,000</span>
+</div>
+</article>
+<!-- Item 4: Bus transfer -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="transport" data-memo="bus transfer morning commute">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">directions_bus</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bus Transfer</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Sector Transfer 122</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">8:05 AM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">Transit Card</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩900</span>
+</div>
+</article>
+</div>
+</section>
+<!-- GROUP 2: Yesterday, Oct 23 -->
+<section class="flex flex-col gap-space-sm tx-group" data-date="2024-10-23">
+<!-- Date Bar Header -->
+<div class="sticky top-16 z-20 flex items-center justify-between py-1 bg-surface/90 backdrop-blur-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Yesterday, Oct 23</h2>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant font-semibold">
+          -₩42,300
+        </span>
+</div>
+<!-- Item Card Stack -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: Baemin Bibimbap bowl -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="food" data-memo="baemin bibimbap bowl treat dinner delivery">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary">lunch_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Baemin Bibimbap Bowl</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Warm dinner after shift</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded-md bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-medium">Treat</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">7:30 PM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩11,500</span>
+</div>
+</article>
+<!-- Item 2: CU Mart -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="shopping" data-memo="cu mart laundry detergent daily goods convenience">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary">local_mall</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">CU Mart</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Refill laundry detergent</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">3:10 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">KakaoPay</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩5,800</span>
+</div>
+</article>
+<!-- Item 3: Olive Young -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="shopping" data-memo="olive young lip balm vitamins skincare health shopping">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary">shopping_bag</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Olive Young</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Lip balm &amp; daily vitamins</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">1:20 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">Hyundai Card</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩25,000</span>
+</div>
+</article>
+</div>
+</section>
+<!-- GROUP 3: Tuesday, Oct 22 -->
+<section class="flex flex-col gap-space-sm tx-group" data-date="2024-10-22">
+<!-- Date Bar Header -->
+<div class="sticky top-16 z-20 flex items-center justify-between py-1 bg-surface/90 backdrop-blur-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Tuesday, Oct 22</h2>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant font-semibold">
+          -₩6,400
+        </span>
+</div>
+<!-- Item Card Stack -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: Compose Coffee -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="cafe" data-memo="compose coffee vanilla latte afternoon break">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-tertiary-fixed/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-tertiary">local_cafe</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Compose Coffee</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Vanilla latte</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">2:15 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">Apple Pay</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩2,500</span>
+</div>
+</article>
+<!-- Item 2: GS25 -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="food" data-memo="gs25 convenience store snack chocolate biscuit">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary">cookie</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">GS25 Convenience</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Energy snack &amp; mineral water</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">4:30 PM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩2,500</span>
+</div>
+</article>
+<!-- Item 3: Subway Line 2 -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="transport" data-memo="subway line 2 transit commute morning">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">subway</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Subway Line 2</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Morning commute</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">9:00 AM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩1,400</span>
+</div>
+</article>
+</div>
+</section>
+<!-- GROUP 4: Monday, Oct 21 -->
+<section class="flex flex-col gap-space-sm tx-group" data-date="2024-10-21">
+<!-- Date Bar Header -->
+<div class="sticky top-16 z-20 flex items-center justify-between py-1 bg-surface/90 backdrop-blur-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Monday, Oct 21</h2>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/40 font-label-md text-label-md text-secondary font-bold">
+            +₩250,000
+          </span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant font-semibold">
+            -₩14,800
+          </span>
+</div>
+</div>
+<!-- Item Card Stack -->
+<div class="flex flex-col gap-space-xs">
+<!-- Item 1: Side Gig Freelance (Income) -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="income" data-memo="side gig freelance design payout income salary transfer bonus">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-primary" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Side Gig Freelance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Mobile UI icon system kit</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Income</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">5:00 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">KakaoBank</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">+₩250,000</span>
+</div>
+</article>
+<!-- Item 2: Kimbap Cheonguk -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="food" data-memo="kimbap cheonguk spicy ramen lunch dining">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-secondary">ramen_dining</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Kimbap Cheonguk</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Spicy cheese ramen &amp; tuna roll</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">12:45 PM</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">Toss Card</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩6,500</span>
+</div>
+</article>
+<!-- Item 3: Bus & Subway -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="transport" data-memo="subway round trip transport commute">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">commute</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Subway Round Trip</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Hongdae ←→ Gangnam</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-body-sm text-body-sm text-outline">6:30 PM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩2,800</span>
+</div>
+</article>
+<!-- Item 4: Mobile Telecom Bill -->
+<article class="tx-item flex items-center justify-between p-space-md bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer" data-cat="bills" data-memo="mobile telecom bill kt alttel auto pay fixed monthly recurring">
+<div class="flex items-center gap-space-md min-w-0 flex-1 pr-space-sm">
+<div class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px] text-on-surface-variant">phone_iphone</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Mobile Telecom Bill</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">KT Alttel budget plan</p>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="px-space-xs py-0.5 rounded-md bg-surface-variant text-on-surface-variant font-label-sm text-label-sm font-medium">Auto-pay</span>
+<span class="text-outline text-[10px]">•</span>
+<span class="font-body-sm text-body-sm text-outline">9:00 AM</span>
+</div>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">-₩5,500</span>
+</div>
+</article>
+</div>
+</section>
+</div>
+<!-- Warm & Delightful Empty State (Hidden by default, triggered on no search/filter match) -->
+<div class="hidden flex-col items-center justify-center text-center py-12 px-space-md bg-surface-container-lowest rounded-2xl shadow-sm mt-space-md" id="emptyResultState">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-md">
+<span class="material-symbols-outlined text-[32px] text-outline">receipt_long</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">No transactions found</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs mb-space-md">
+      We couldn't spot any logs matching that filter. Try searching for a different keyword or category!
+    </p>
+<button class="px-space-lg py-2 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-semibold transition-all hover:bg-secondary-fixed active:scale-95 shadow-sm" id="resetFiltersBtn" type="button">
+      Reset All Filters
+    </button>
+</div>
+</div>
+<script>
+  (function initTransactionHistory() {
+    const searchInput = document.getElementById('txSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const txItems = document.querySelectorAll('.tx-item');
+    const txGroups = document.querySelectorAll('.tx-group');
+    const emptyState = document.getElementById('emptyResultState');
+    const resetBtn = document.getElementById('resetFiltersBtn');
+    const monthDropdownBtn = document.getElementById('monthDropdownBtn');
+    const monthArrow = document.getElementById('monthArrow');
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    // Month Selector subtle toggle affordance
+    if (monthDropdownBtn && monthArrow) {
+      let isRotated = false;
+      monthDropdownBtn.addEventListener('click', () => {
+        isRotated = !isRotated;
+        monthArrow.style.transform = isRotated ? 'rotate(180deg)' : 'rotate(0deg)';
+      });
+    }
+
+    // Filter Logic
+    function applyFilters() {
+      let visibleItemCount = 0;
+
+      txItems.forEach(item => {
+        const itemCat = item.getAttribute('data-cat') || '';
+        const itemMemo = (item.getAttribute('data-memo') || '').toLowerCase();
+        const matchesCategory = (currentCategory === 'all') || (itemCat === currentCategory);
+        const matchesSearch = !searchQuery || itemMemo.includes(searchQuery);
+
+        if (matchesCategory && matchesSearch) {
+          item.classList.remove('hidden');
+          visibleItemCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      // Show/Hide group date headers if all child items are filtered out
+      txGroups.forEach(group => {
+        const activeItemsInGroup = group.querySelectorAll('.tx-item:not(.hidden)');
+        if (activeItemsInGroup.length === 0) {
+          group.classList.add('hidden');
+        } else {
+          group.classList.remove('hidden');
+        }
+      });
+
+      // Toggle Empty State View
+      if (visibleItemCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    // Category Chip Clicks
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => {
+          c.classList.remove('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+          c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+
+        chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        chip.classList.add('bg-primary-container', 'text-on-primary-container', 'font-semibold');
+
+        currentCategory = chip.getAttribute('data-category');
+        applyFilters();
+      });
+    });
+
+    // Search Input Typing
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim().toLowerCase();
+        if (clearBtn) {
+          if (searchQuery.length > 0) {
+            clearBtn.classList.remove('hidden');
+          } else {
+            clearBtn.classList.add('hidden');
+          }
+        }
+        applyFilters();
+      });
+    }
+
+    // Clear Search Field
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearBtn.classList.add('hidden');
+        searchInput.focus();
+        applyFilters();
+      });
+    }
+
+    // Reset All Filters Button
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+          searchQuery = '';
+        }
+        if (clearBtn) clearBtn.classList.add('hidden');
+
+        // Select 'All' filter chip
+        const allChip = document.querySelector('.filter-chip[data-category="all"]');
+        if (allChip) allChip.click();
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-sm"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs transition-colors text-primary font-label-md" data-path="history" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">History</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="stats" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="font-label-sm text-label-sm">Stats</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="goals" href="#"><span class="material-symbols-outlined text-[24px]">flag</span><span class="font-label-sm text-label-sm">Goals</span></a></div></nav></body></html>

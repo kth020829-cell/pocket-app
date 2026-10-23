@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary": "#735c00", "surface-container-highest": "#dae2fd", "secondary-container": "#80f9c8", "outline-variant": "#bbcabf", "on-error-container": "#93000a", "primary-fixed": "#6ffbbe", "on-tertiary-container": "#473700", "outline": "#6c7a71", "inverse-primary": "#4edea3", "on-primary": "#ffffff", "surface-container-lowest": "#ffffff", "error": "#ba1a1a", "on-secondary-fixed": "#002115", "inverse-surface": "#283044", "surface-bright": "#faf8ff", "surface-dim": "#d2d9f4", "error-container": "#ffdad6", "secondary": "#006c4e", "tertiary-fixed-dim": "#eac33e", "on-surface-variant": "#3c4a42", "primary": "#006c49", "surface-container-high": "#e2e7ff", "secondary-fixed": "#80f9c8", "surface-tint": "#006c49", "inverse-on-surface": "#eef0ff", "on-surface": "#131b2e", "on-secondary-fixed-variant": "#00513a", "surface-variant": "#dae2fd", "surface-container-low": "#f2f3ff", "surface": "#faf8ff", "background": "#faf8ff", "on-secondary-container": "#007353", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#574500", "surface-container": "#eaedff", "on-background": "#131b2e", "tertiary-container": "#c39f17", "primary-container": "#10b981", "primary-fixed-dim": "#4edea3", "secondary-fixed-dim": "#62dcad", "tertiary-fixed": "#ffe086", "on-primary-fixed-variant": "#005236", "on-error": "#ffffff", "on-tertiary": "#ffffff", "on-primary-fixed": "#002113", "on-tertiary-fixed": "#231b00", "on-primary-container": "#00422b" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2rem", "gutter": "1rem", "margin": "1rem" }, fontFamily: { "label-md": ["Inter"], "label-lg": ["Inter"], "headline-lg": ["Inter"], "display-lg": ["Inter"], "display-lg-mobile": ["Inter"], "body-sm": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-lg-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600" }], "headline-sm": ["18px", { lineHeight: "24px", fontWeight: "600" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.03em", fontWeight: "500" }], "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Pocket App Icon" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1W3agjCMLlBlGzBq_Hl3kbgYBuM_97UkX6lnFpvMy7Qnxbm3D_VoBLuKEuChMwhmkDbCCEtBifcptOxXeEUhpxRqZKj1Q5jvW0TKE-J5GPfU0Nat2IBZBVdnjre2Tg55b4KcMKsHBYs5Tk3ZBAvuUUExdmrgcPc51k2C1TS0NFiz9X_wvGHkJlqTujjG5mehAk9kLxNN9j-8OH0TtIPnLpD7gdVfUMY3pThyDIQEVNtjHcfKZz0f59JXR8c"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Pocket</span><span class="font-label-md text-label-md text-on-surface-variant ml-space-xs hidden">Home</span></div><button class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container/60 transition-colors" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlicgzebLQ4_Eo0g8Q2iHQrFe3XMLFY94jZucMTijuPiScZEokOz6WiJV8emXmuMNYK7vCMXcc5xRH77_aoC5EMGkZURx6ikgQlXvIzx4-8ow3HgBqoAikrUrFQ0YWZd8eX_KXId23WBlSK11gplVt9eowO9mD3906WDroeoIjWwvWzhb3XGiuJMFSbIzo8RCKTojXwL2fF21MPiN-YYgwSLfY4CacyuwhuZxYz1bgmoaTppMC8x8K5Q"/></button></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-6 space-y-5">
+<!-- Friendly Welcoming Header -->
+<div class="flex flex-col pt-1">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Good morning,</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-0.5 flex items-center gap-1.5">
+          Hi, Taehyun <span class="inline-block animate-bounce text-[26px]">👋</span>
+</h1>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container/40 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">spa</span>
+<span class="font-label-sm text-label-sm font-semibold">Chill Mode</span>
+</div>
+</div>
+<div class="mt-2.5 flex items-center gap-2 p-2.5 rounded-xl bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary">sentiment_satisfied</span>
+<p class="font-body-sm text-body-sm text-on-surface">You're doing great with your budget this month!</p>
+</div>
+</div>
+<!-- Hero Card: Monthly Remaining Budget -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-lowest p-5 shadow-[0_4px_20px_-4px_rgba(19,27,46,0.06)]">
+<!-- Subtle Ambient Mint Glow Backdrop -->
+<div class="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-primary-fixed/25 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-8 -left-8 w-32 h-32 rounded-full bg-secondary-container/30 blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col">
+<!-- Tag / Badge Header -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">October Budget</span>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="font-label-sm text-label-sm font-medium">11 days left</span>
+</div>
+</div>
+<!-- Large Balance Display -->
+<div class="mt-4 flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Remaining balance</span>
+<div class="flex items-baseline gap-2 mt-0.5">
+<span class="font-display-lg-mobile text-display-lg-mobile text-on-surface tracking-tight font-bold">₩420,000</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">left</span>
+</div>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">of ₩1,000,000 total budget</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface font-semibold">42%</span>
+</div>
+</div>
+<!-- Tactile Progress Meter -->
+<div class="mt-5 flex flex-col gap-1.5">
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden p-0.5 flex items-center">
+<div class="h-full rounded-full bg-primary-container transition-all duration-700 ease-out" style="width: 58%;"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-0.5">
+<span>Spent 58%</span>
+<span>42% safe cushion</span>
+</div>
+</div>
+<!-- Quick Metrics Pill Row -->
+<div class="grid grid-cols-2 gap-2.5 mt-4 pt-3.5 border-t border-surface-container-low">
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">trending_up</span> Spent so far
+          </span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">₩580,000</span>
+</div>
+<div class="flex flex-col p-2.5 rounded-xl bg-surface-container-low">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">speed</span> Daily pace
+          </span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold mt-1">₩38,180<span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/d</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Today's Spending Insight Card -->
+<div class="rounded-2xl bg-surface-container-lowest p-4 shadow-[0_2px_12px_-2px_rgba(19,27,46,0.04)]">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">donut_small</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Today's Spending</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">₩18,500</span>
+</div>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container/50 text-on-secondary-fixed-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm font-semibold">₩12,000 under avg</span>
+</div>
+</div>
+<!-- Mini Sub-category Chips -->
+<div class="flex items-center gap-2 mt-3 pt-3 flex-wrap">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="text-sm">🥗</span>
+<span class="font-label-sm text-label-sm text-on-surface">Food</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">₩12,000</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="text-sm">🚇</span>
+<span class="font-label-sm text-label-sm text-on-surface">Transport</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">₩2,500</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container-low">
+<span class="text-sm">🏪</span>
+<span class="font-label-sm text-label-sm text-on-surface">Mart</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">₩4,000</span>
+</div>
+</div>
+</div>
+<!-- Solo Living Wellness Banner -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container p-4 flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest shrink-0 overflow-hidden shadow-sm flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="A warm cozy minimalist studio apartment kitchen with fresh organic groceries on a clean counter, soft morning sun rays shining through a window, plant in background, calming pastel lifestyle photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOFfalomKVq1WYmpEJ7hmhXJgfsWuJGLI-ZQl8OK2rb5YdoH65PZ2kK8-PgfVXOY2rcpdusFyUrkIbd_TeB6dqrJ3J3xhQ9-hQrHi7D5OPziwp-1jfXL1fzBO5uVSDYjsdnOCpJ4kRwT5xm2soTRKmGc7WZ37vNffTU_vCc77b01I7b5HCuhKRJV9pajyXKfHwT9PQ5R7UFewuPO3ZUfir1gR-Q1SCVm-4oDNMDMarv9ljZiAi4VhJjw"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="font-label-sm text-label-sm text-primary font-semibold">Solo Living Tip</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Cooked at home 3 days in a row! Saved ~₩35,000.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] shrink-0">chevron_right</span>
+</div>
+<!-- Recent Transactions Section -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between px-0.5">
+<div class="flex items-center gap-1.5">
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Recent Transactions</h2>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-secondary transition-colors" type="button">See all</button>
+</div>
+<!-- Transaction List Container -->
+<div class="rounded-2xl bg-surface-container-lowest p-2 shadow-[0_2px_12px_-2px_rgba(19,27,46,0.04)] flex flex-col divide-y divide-surface-container-low">
+<!-- Transaction Item 1: Groceries -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low/60 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="text-lg">🥗</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Groceries</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container text-on-surface-variant">Meal Prep</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Emart Everyday (Tofu, eggs, milk)</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">-₩14,200</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1:45 PM</span>
+</div>
+</div>
+<!-- Transaction Item 2: Transport -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low/60 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="text-lg">🚇</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Transport</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Subway Line 2 commute</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">-₩1,400</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8:50 AM</span>
+</div>
+</div>
+<!-- Transaction Item 3: Coffee -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low/60 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed/30 flex items-center justify-center shrink-0">
+<span class="text-lg">☕</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Cafe</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Mega Coffee iced americano</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">-₩2,000</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8:15 AM</span>
+</div>
+</div>
+<!-- Transaction Item 4: Delivery Dinner (Yesterday) -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low/60 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-error-container/40 flex items-center justify-center shrink-0">
+<span class="text-lg">🍱</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Dining</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-container text-on-surface-variant">Treat</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Baemin Bibimbap bowl</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">-₩11,500</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yest, 7:30 PM</span>
+</div>
+</div>
+<!-- Transaction Item 5: Convenience Store -->
+<div class="flex items-center justify-between p-2.5 rounded-xl hover:bg-surface-container-low/60 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="text-lg">🏪</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Daily Goods</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">CU Mart laundry detergent</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">-₩5,800</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yest, 3:10 PM</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Motivational Pocket Milestone Card -->
+<div class="rounded-2xl p-4 bg-gradient-to-r from-primary/10 via-secondary-container/20 to-transparent flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm shrink-0">
+<span class="material-symbols-outlined text-[22px]">savings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Weekly Goal Reached</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kept daily average under ₩40k for 5 days</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm">🌱</span>
+</div>
+<!-- Floating Action Button (FAB) for Quick Expense Logging -->
+<div class="fixed right-5 bottom-20 z-40">
+<button aria-label="Add transaction" class="w-14 h-14 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_10px_25px_-4px_rgba(16,185,129,0.45)] hover:scale-105 active:scale-95 transition-all duration-200 focus:outline-none" id="pocket-fab-btn" type="button">
+<span class="material-symbols-outlined text-[30px] font-bold">add</span>
+</button>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for FAB button
+  const fabBtn = document.getElementById('pocket-fab-btn');
+  if (fabBtn) {
+    fabBtn.addEventListener('click', () => {
+      fabBtn.classList.add('scale-90');
+      setTimeout(() => {
+        fabBtn.classList.remove('scale-90');
+      }, 150);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs transition-colors text-primary font-label-md" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="history" href="#"><span class="material-symbols-outlined text-[24px]">receipt_long</span><span class="font-label-sm text-label-sm">History</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="stats" href="#"><span class="material-symbols-outlined text-[24px]">bar_chart</span><span class="font-label-sm text-label-sm">Stats</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="goals" href="#"><span class="material-symbols-outlined text-[24px]">flag</span><span class="font-label-sm text-label-sm">Goals</span></a></div></nav></body></html>
